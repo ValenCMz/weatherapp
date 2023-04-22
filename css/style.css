@@ -1,43 +1,94 @@
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
     outline: none;
     box-sizing: border-box;
+    font-family: 'Poltawski Nowy', serif;
+
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #0D042E;
+    background-color: #DCDCDC;
 }
 
-.container{
-    background-color: white;
-    margin-bottom: 20px; /* Agrega un margen inferior de 20px */
-
-}
-
-.container{
+.container {
+    position: relative;
+    width: 400px;
+    height: 105px;
     border-radius: 20px;
+    background-image: radial-gradient(at 80px 50px, #DF90DF, #780F78);
+    padding: 28px 32px;
+    overflow: hidden;
+    transition: 0.6s ease-out;
+    margin-bottom: 20px;
 }
 
-.container-characteristics{
+.container-characteristics {
     background-color: white;
-    width: 25%;
+    width: 50%;
     height: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    
     border-radius: 10px;
 }
 
+.search-box {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-bottom: 1rem;
+}
 
+.search-box input {
+    color: #06283D;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 30px;
+}
 
-.not-found img{
+.search-box input::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize;
+}
+
+.search-box button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 500px;
+    color: #06283D;
+    font-size: 18px;
+    background-color: white;
+    transition: 0.4s ease;
+}
+
+.search-box button:hover {
+    color: white;
+    background-color: #06283D;
+}
+
+.search-box i {
+    position: absolute;
+    right: 320px;
+    color: #06283D;
+    font-size: 25px;
+}
+
+.not-found img {
     width: 20rem;
 }
