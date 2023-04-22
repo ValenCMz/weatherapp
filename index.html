@@ -5,12 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WhaterApp</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your location">
+            <button class="fa-solid fa-mafnifytin-glass fa-search"></button>
+        </div>
 
-    <script src="js/mainJs.js"></script>
+        
+
+        <div class="not-found">
+            <img src="img/Error-404.avif" alt="">
+            <p>Invalid Location!!</p>
+        </div>
+
+        <div class="whater-box">
+            <img src="" alt="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>        
+    </div>
+
+    <div class="container-characteristics">
+        <div class="humidity">
+            <i class="fa-solid fa-water"></i>
+            <div class="text">
+                <span></span>
+                <p>Humidity</p>
+            </div>
+        </div>
+
+        <div class="Wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+                <span></span>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+    <script src="https://kit.fontawesome.com/d769405d4e.js" crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
+
 </body>
 
 </html>
