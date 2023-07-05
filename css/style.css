@@ -8,6 +8,11 @@
 
 }
 
+/* .main {
+    display: grid;
+
+} */
+
 body {
     height: 100vh;
     display: flex;
@@ -29,23 +34,12 @@ body {
     margin-bottom: 20px;
 }
 
-.container-characteristics {
-    background-color: white;
-    width: 400px;
-    height: 10vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 10px;
-
-}
-
 .search-box {
     width: 100%;
     height: min-content;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-left: 32px;
     padding-bottom: 1rem;
 }
@@ -88,21 +82,122 @@ body {
 
 .search-box i {
     position: absolute;
-    right: 320px;
+    right: 314px;
     color: black;
     font-size: 25px;
 }
 
-.not-found img {
-    width: 20rem;
-}
 
-.humidity,
-.wind {
+.container-characteristics {
+    background-color: white;
+    width: 400px;
+    height: 10vh;
     display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    transition: 0.6s ease-out;
 }
 
-.humidity p,
-.wind p {
-    font-size: small;
+
+
+.container-characteristics .humidity,
+.container-characteristics .wind {
+    display: flex;
+    align-items: center;
+
 }
+
+.container-characteristics .humidity {
+    padding-left: 20px;
+    justify-content: flex-end;
+}
+
+.container-characteristics .wind {
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+
+.container-characteristics i {
+    color: #06283D;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.container-characteristics span {
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.container-characteristics p {
+    color: #06283D;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.not-found img {
+    width: 70%;
+}
+
+.not-found {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.not-found p {
+    color: brown;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.container-characteristics {
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn {
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5;
+}
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+
+.whater-box .image {
+    width: 350px;
+    height: 350px;
+}
+
+/* .wather-box .temperature {
+    position: relative;
+    color: #06283D;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.wather-box .temperature span {
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.wather-box .description {
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+} */
